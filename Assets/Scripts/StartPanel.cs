@@ -49,7 +49,7 @@ public class StartPanel : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Scenes/Main");
+        SceneManager.LoadScene("glxbsdx");
     }
 
     private void ExitGame()

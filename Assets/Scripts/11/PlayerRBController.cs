@@ -48,8 +48,29 @@ public class PlayerRBController : MonoBehaviour
         // 鼠标
         inputMouseX = Input.GetAxis("Mouse X");
         inputMouseY = Input.GetAxis("Mouse Y");
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            CheckInteract();
+        }
     }
 
+    private void CheckInteract()
+    {
+        Camera cam = Camera.main;
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100f))
+        {
+            Debug.Log("点到了: " + hit.collider.name);
+
+            //示例：与物体交互
+            hit.collider.GetComponent<IInteract>()?.Interact();
+        }
+    }
+    
     void FixedUpdate()
     {
         HandleMove();

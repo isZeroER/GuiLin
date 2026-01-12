@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: 3f56f6190b29ee74cbf0e9849fd6854e
   - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: e4b755a579d49b94aaa7d05184e25f78
+    path: Assets/Scenes/glxbsdx.unity
+    guid: dc57ea01230daf049b9bec4b9124e0b1
   m_configObjects: {}
