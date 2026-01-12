@@ -14,7 +14,7 @@ public class MicPhone : IInteract
 
     public void AnswerRight()
     {
-        light.intensity = 1;
+        light.intensity = 100;
         StartCoroutine(CoShowOut());
     }
 
